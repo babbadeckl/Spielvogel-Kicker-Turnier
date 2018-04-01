@@ -103,7 +103,7 @@ public class GameManagement {
                 return team;
             }
         }
-        return null;
+        return new Team("huan", "son");  //this cannot be a case.
     }
 
     public ArrayList<String> getPlayers() {
@@ -135,4 +135,8 @@ public class GameManagement {
     }
 
 
+    public void shuffleTeams() {
+        Collections.shuffle(matches)
+        ;
+    }
 }

@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="SpielvogelKickerSimulator.jar" size="178453" download="eager" />
+    <jar href="SpielvogelKickerSimulator.jar" size="257134" download="eager" />
   </resources>
   <jfx:javafx-desc  width="1100" height="700" main-class="sample.Main"  name="SpielvogelKickerSimulator" />
   <update check="background"/>

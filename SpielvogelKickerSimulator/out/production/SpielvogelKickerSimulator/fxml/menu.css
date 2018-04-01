@@ -1,0 +1,35 @@
+.button:hover {
+    -fx-background-color: #dae5f3;
+    -fx-text-fill: white;
+}
+
+.button:pressed {
+    -fx-background-color: steelblue;
+    -fx-translate-y: 1;
+    -fx-effect: dropshadow(three-pass-box, gray, 1,1,1,1);
+}
+
+#button_play{
+    -fx-background-color: steelblue;
+    -fx-effect: dropshadow(three-pass-box, black, 1,1,1,1);
+}
+
+#button_play:hover{
+    -fx-background-color: #dae5f3;
+    -fx-text-fill: green;
+    -fx-translate-y: 1;
+}
+
+#button_play:pressed{
+    -fx-background-color: steelblue;
+    -fx-translate-y: 1;
+    -fx-effect: dropshadow(three-pass-box, gray, 1,1,1,1);
+}
+
+.check-box{
+    -fx-text-fill: white;
+}
+
+.label{
+    -fx-text-fill: white;
+}

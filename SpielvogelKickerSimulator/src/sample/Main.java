@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -15,6 +16,7 @@ public class Main extends Application {
 
     public static final int WIDTH = 1100;
     public static int HEIGHT = 700;
+
 
     /**
      * Main function of the whole application. This method gets executed when the program starts.
@@ -37,6 +39,7 @@ public class Main extends Application {
             primaryStage.setTitle("Spielvogel Kicker Turnier");
             primaryStage.setScene(new Scene(root, WIDTH, HEIGHT));
             primaryStage.setResizable(false);
+            primaryStage.getIcons().add(new Image("images/fua.jpg"));
             primaryStage.show();
             root.requestFocus();
         }

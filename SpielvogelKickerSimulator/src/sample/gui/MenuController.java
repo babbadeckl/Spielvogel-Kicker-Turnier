@@ -12,6 +12,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import sample.model.PlayerManagement;
@@ -27,6 +28,7 @@ public class MenuController implements Initializable {
     public javafx.scene.control.TextField textfield_newPlayer;  //textfield for the new player function
     public ListView<String> list_players; //ListView of all currently active players
     private ObservableList<String> items; //needed to keep the list dynamically updated
+    public AnchorPane top_parent;
     PlayerManagement playerManagement; //model
 
     /**
@@ -103,6 +105,7 @@ public class MenuController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         playerManagement = new PlayerManagement();
         items = FXCollections.observableArrayList();
+        top_parent.getStylesheets().add("fxml/menu.css");
     }
 
 
